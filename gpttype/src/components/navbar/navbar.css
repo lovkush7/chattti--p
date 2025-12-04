@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-right .setting{
+    font-size: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+
+}
+.nav-right .logout{
+    font-size: 0px;
+    cursor: pointer;
+    
+}
+.nav-right .btn {
+    outline: node;;
+    border:none;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(99, 93, 93);
+}

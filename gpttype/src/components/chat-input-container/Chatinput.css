@@ -1,0 +1,116 @@
+.message-input{
+    width: 100%;
+    padding: 1rem;
+}
+.previewe-wrapper{
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.preview-box{
+    position: relative;
+}
+.preview-images{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    border: 1px solid #3f3f46;
+}
+.remove-btn{
+    position: absolute;
+    top: -0.375rem;
+    bottom: -0.375rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+.remove-icon{
+    font-size: 0.75rem;
+    line-height: 1;
+}
+.form-row{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.form-row .grow{
+    flex: 1;
+    display: flex;
+    gap: 0.5rem;
+}
+.input-text{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.35rem 0.6rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    outline: none;
+    background-color: #ffff;
+
+}
+.input-text:focus{
+    border-color: #6b8cff;
+    box-shadow:  0 0 0 3px rgba(107, 140, 255, 0.12);
+}
+@media(min-width:640px){
+    .input-text{
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+    }
+}
+.hidden{
+    display: none;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.35rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0.357rem;
+}
+.btn:focus{
+    outline: none;
+}
+.btn-sm-hidden{
+    display: none;
+}
+@media (min-width:640px){
+    .btn-sm-hidden{
+        display: inline-block;
+    }
+}
+.bttn{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    border: none;
+    color: #a1a1aa;
+    cursor: pointer;
+    transition: background-color .15s ease, opacity .15s ease;
+
+}
+.bttn:hover:not(:disabled){
+    background-color:#d9d9e2 ;
+}
+.bttn:disabled{
+    cursor:not-allowed;
+    opacity: 0.6;
+}

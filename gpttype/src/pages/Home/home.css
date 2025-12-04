@@ -1,0 +1,28 @@
+.page-container{
+    height: 100vh;
+    background-color: #e5e7eb;
+}
+.page-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.chat-card{
+    background-color: #ffffff;
+    border-radius: 0,5rem;
+    box-shadow:  0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    max-width: 72rem;
+    height: calc(100vh - 8rem);            
+}
+.chat-container{
+    display: flex;
+    height: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
