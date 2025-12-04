@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./typegpt
+    container_name: backend_container
+    ports:
+      - "8000:8000"
+    
+    volumes:
+      - ./typegpt:/app/backend
+      - /app/backend/node_modules
+
+    depends_on:
+      - db
+         
+  db:
+    image: postgres
+    container_name: db_container
+    environment:
+      POSTGRES_PASSWORD: lovkush,
+      POSTGRES_USER: postgres
+      POSTGRES_DB: fixed_ho
+      PG_DATA: 
+
+
+
